@@ -1,0 +1,32 @@
+{
+  "name": "xbro-messaging",
+  "version": "0.0.0",
+  "description": "Cross-browser content-script to background script communications for browser extensions (add-ons).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aaronmccall/xbro-messaging.git"
+  },
+  "keywords": [
+    "xbro",
+    "extensions",
+    "messaging",
+    "cross-browser",
+    "chrome",
+    "firefox"
+  ],
+  "author": "Aaron McCall <aaron@andyet.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronmccall/xbro-messaging/issues"
+  },
+  "homepage": "https://github.com/aaronmccall/xbro-messaging",
+  "dependencies": {
+    "wildemitter": "~1.0.1",
+    "async": "~0.9.0",
+    "object-path": "~0.5.0"
+  }
+}
