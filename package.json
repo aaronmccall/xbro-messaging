@@ -1,15 +1,25 @@
 {
   "name": "xbro-messaging",
-  "version": "0.0.0",
   "description": "Cross-browser content-script to background script communications for browser extensions (add-ons).",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.0",
+  "author": "Aaron McCall <aaron@andyet.net>",
+  "bugs": {
+    "url": "https://github.com/aaronmccall/xbro-messaging/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/aaronmccall/xbro-messaging.git"
+  "dependencies": {
+    "async": "~0.9.0",
+    "kisslog": "^2.0.0",
+    "node-uuid": "~1.4.1",
+    "object-path": "~0.5.0",
+    "wildemitter": "~1.0.1"
   },
+  "devDependencies": {
+    "code": "1.x",
+    "lab": "5.x",
+    "lodash-node": "^2.4.1",
+    "sinon": "1.x"
+  },
+  "homepage": "https://github.com/aaronmccall/xbro-messaging",
   "keywords": [
     "xbro",
     "extensions",
@@ -18,15 +28,14 @@
     "chrome",
     "firefox"
   ],
-  "author": "Aaron McCall <aaron@andyet.net>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/aaronmccall/xbro-messaging/issues"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aaronmccall/xbro-messaging.git"
   },
-  "homepage": "https://github.com/aaronmccall/xbro-messaging",
-  "dependencies": {
-    "wildemitter": "~1.0.1",
-    "async": "~0.9.0",
-    "object-path": "~0.5.0"
+  "scripts": {
+    "test": "lab -v",
+    "test-cov": "lab -v -r html -o coverage.html"
   }
 }
